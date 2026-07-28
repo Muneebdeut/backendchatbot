@@ -1,0 +1,24 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Environment variables containing sensitive keys
+.env
+.env.local
+.env.production
+
+# Python byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Large/Cache directories
+model_cache/
+data/
+
+# IDE files
+.vscode/
+.idea/
+.DS_Store
