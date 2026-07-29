@@ -32,9 +32,9 @@ class Settings(BaseSettings):
     logfire_token: str = ""
 
     # --- Embedding model ---
-    embedding_model_name: str = "text-embedding-3-small"
+    embedding_model_name: str = "sentence-transformers/all-MiniLM-L6-v2"
     embedding_cache_dir: str = "./model_cache"
-    embedding_dimension: int = 1536
+    embedding_dimension: int = 384
 
     # --- Chunking ---
     chunk_size: int = 1000
