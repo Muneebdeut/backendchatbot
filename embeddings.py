@@ -33,7 +33,11 @@ def get_embeddings() -> Embeddings:
             api_key=openai_key,
         )
 
-    hf_token = os.environ.get("HUGGINGFACE_API_KEY") or os.environ.get("HF_TOKEN", "")
+    hf_token = (
+        os.environ.get("HUGGINGFACEHUB_API_TOKEN")
+        or os.environ.get("HUGGINGFACE_API_KEY")
+        or os.environ.get("HF_TOKEN", "")
+    )
     if hf_token:
         hf_model = "sentence-transformers/all-MiniLM-L6-v2"
         logger.info("Initializing Hugging Face Router embedding model '%s'", hf_model)
