@@ -21,7 +21,10 @@ def get_embeddings() -> OpenAIEmbeddings:
     settings = get_settings()
     logger.info("Initializing API embedding model '%s'", settings.embedding_model_name)
     
-    kwargs = {"model": settings.embedding_model_name}
+    kwargs = {
+        "model": settings.embedding_model_name,
+        "dimensions": settings.embedding_dimension,
+    }
     if settings.openai_api_key:
         kwargs["api_key"] = settings.openai_api_key
         

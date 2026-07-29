@@ -99,5 +99,9 @@ async def metrics() -> MetricsResponse:
 
 @app.exception_handler(Exception)
 async def unhandled_exception_handler(request: Request, exc: Exception) -> JSONResponse:
-    logger.exception("Unhandled exception on %s", request.url.path)
-    return JSONResponse(status_code=500, content={"detail": "Internal server error."})
+    logger.exception("Unhandled exception on %s: %s", request.url.path, exc)
+    return JSONResponse(
+        status_code=500,
+        content={"detail": f"Internal server error: {type(exc).__name__} - {str(exc)}"},
+    )
+
