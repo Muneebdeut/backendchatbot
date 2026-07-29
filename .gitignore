@@ -16,7 +16,7 @@ __pycache__/
 
 # Large/Cache directories
 model_cache/
-data/
+
 
 # IDE files
 .vscode/

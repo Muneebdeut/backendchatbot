@@ -1,0 +1,23 @@
+# Men's Salon Knowledge Base & Pricing Guide
+
+## Haircuts & Styling
+- Standard Men's Haircut: $30
+- Executive Haircut & Wash: $45
+- Buzz Cut & Beard Trim: $35
+- Kids Haircut (under 12): $22
+- Senior Haircut (65+): $25
+
+## Beard & Grooming
+- Beard Trim & Line Up: $20
+- Royal Hot Towel Shave: $35
+- Beard Color Treatment: $25
+
+## Hair & Scalp Treatments
+- Deep Conditioning Treatment: $25
+- Scalp Massage & Treatment: $30
+- Hair Coloring & Highlights: $50+
+
+## Salon Hours & Location
+- Hours: Monday - Saturday 9:00 AM - 8:00 PM, Sunday 10:00 AM - 5:00 PM
+- Location: 123 Main Street, Suite 100
+- Appointments & Walk-ins are welcome.
