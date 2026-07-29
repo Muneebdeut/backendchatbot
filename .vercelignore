@@ -5,8 +5,8 @@ ENV
 .env
 .env.local
 model_cache/
-data/
 Dockerfile
+
 guardrails_config/
 *.pyc
 __pycache__
