@@ -22,7 +22,8 @@ class Settings(BaseSettings):
     qdrant_api_key: str
     collection_name: str = "mens_saloon"
 
-    # --- LLM providers (used by LiteLLM Router) ---
+    # --- LLM providers (used by LiteLLM Router & Embeddings) ---
+    openai_api_key: str = ""
     groq_api_key: str = ""
     gemini_api_key: str = ""
     mistral_api_key: str = ""
@@ -31,9 +32,9 @@ class Settings(BaseSettings):
     logfire_token: str = ""
 
     # --- Embedding model ---
-    embedding_model_name: str = "sentence-transformers/all-MiniLM-L6-v2"
+    embedding_model_name: str = "text-embedding-3-small"
     embedding_cache_dir: str = "./model_cache"
-    embedding_dimension: int = 384
+    embedding_dimension: int = 1536
 
     # --- Chunking ---
     chunk_size: int = 1000
