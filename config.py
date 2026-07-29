@@ -48,7 +48,7 @@ class Settings(BaseSettings):
     # Minimum cosine similarity a top match must have before we even
     # bother calling the LLM. Below this, we assume the question is
     # off-topic / not covered by our documents and show the ad instead.
-    similarity_threshold: float = 0.35
+    similarity_threshold: float = 0.30
 
     # --- Data ---
     data_dir: str = "./data"
